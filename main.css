@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+/* CARD GENERAL */
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  padding-right: 60px;
+  text-align: left;
+}
+
+.card h2 {
+  font-size: 2.8rem;
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 40px;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card img {
+  width: 80px;
+  margin: 20px 0;
+}
+
+.card a {
+  text-align: center;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  padding: 13px;
+  width: 150px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+/* CARD 1  */
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* CARD 2  */
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card-2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+/* CARD 3 */
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 0px 10px 10px 0px;
+  padding: 20px 40px;
+  padding-right: 50px;
+}
+.card-3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+.card a:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+  text-align: center;
+  width: 90vw;
+  margin: 20px auto;
+}
+
+.attribution a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  width: 90vw;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 90vw;
+    margin: 20px 0;
+  }
+
+  .card-1 {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .card-3 {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
